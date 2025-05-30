@@ -1,0 +1,52 @@
+# OSI and TCP/IP Models with Real-World Examples
+
+This document explains the **OSI (Open Systems Interconnection)** and **TCP/IP (Transmission Control Protocol/Internet Protocol)** networking models, including **each layer and how they apply to real-world scenarios**.
+
+---
+
+## 🌐 OSI Model (7 Layers) — Real-World Examples
+
+| Layer No. | OSI Layer Name     | Real-World Examples |
+|-----------|--------------------|----------------------|
+| 7         | **Application**    | - **HTTP/HTTPS** (web browsing) <br> - **FTP** (file transfers) <br> - **SMTP/IMAP/POP3** (email protocols) <br> - **DNS** (resolving domain names to IPs) |
+| 6         | **Presentation**   | - **SSL/TLS** (encryption for HTTPS) <br> - **JPEG, MP4, GIF** (file formats) <br> - **UTF-8, ASCII** (text encoding standards) |
+| 5         | **Session**        | - **NetBIOS**, **RPC** (Remote session management) <br> - Maintaining a session in a video call or remote desktop |
+| 4         | **Transport**      | - **TCP** (reliable connection – web browsing, email) <br> - **UDP** (fast, no guarantee – video streaming, VoIP, online games) |
+| 3         | **Network**        | - **IP (IPv4/IPv6)** (logical addressing and routing) <br> - **ICMP** (ping/traceroute diagnostics) <br> - **Routers** operate here |
+| 2         | **Data Link**      | - **Ethernet**, **Wi-Fi (802.11)** <br> - **MAC addresses** <br> - **Switches** use MAC to forward frames |
+| 1         | **Physical**       | - **Cables** (Ethernet, fiber optics) <br> - **Wireless signals** <br> - Devices: **Hubs**, **Repeaters**, **NICs** <br> - Transmitting bits (0s and 1s) |
+
+---
+
+## 🌐 TCP/IP Model (4 Layers) — Real-World Examples
+
+| Layer No. | TCP/IP Layer Name   | Corresponds to OSI | Real-World Examples |
+|-----------|---------------------|--------------------|----------------------|
+| 4         | **Application**     | OSI Layers 5–7     | - **Web apps** (HTTP/HTTPS) <br> - **Email** (SMTP/IMAP) <br> - **File sharing** (FTP) <br> - **DNS** |
+| 3         | **Transport**       | OSI Layer 4        | - **TCP**: Reliable – used in web browsing, emails <br> - **UDP**: Fast – used in live streams, online games |
+| 2         | **Internet**        | OSI Layer 3        | - **IP Addresses** (routing) <br> - **Routers** send packets based on destination IP <br> - **ICMP** (used in `ping`) |
+| 1         | **Network Access**  | OSI Layers 1–2     | - **Wi-Fi**, **Ethernet** <br> - **MAC addresses** <br> - Physical transmission using cables or wireless signals |
+
+---
+
+## 📚 Summary
+
+- **OSI Model** is a theoretical framework with 7 layers.
+- **TCP/IP Model** is the practical model used on the Internet today with 4 layers.
+- Each layer plays a specific role in the transmission of data over a network.
+- Real-world technologies (like HTTP, TCP, IP, Ethernet) map directly to these layers.
+
+---
+
+## 📌 Mnemonics to Remember
+
+- **OSI Model (Top to Bottom):**  
+  `All People Seem To Need Data Processing`
+
+- **TCP/IP Model (Top to Bottom):**  
+  `All Teachers Inspire Networking`
+
+---
+
+> Created as part of a networking fundamentals guide.  
+> 📂 **Question:** "Write examples of how each layer applies to real-world scenarios (e.g., HTTP at the Application Layer, TCP at the Transport Layer)."  
