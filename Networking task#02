@@ -1,0 +1,49 @@
+# 📡 Common Networking Protocols & Their Relevance in DevOps
+
+👋 Welcome! This document is created as part of the **#90DaysOfDevOps** challenge (Day 2), guided by [Shubham Londhe](https://twitter.com/Shubhamlondhe07). Today’s task is to understand commonly used networking protocols and their role in DevOps workflows.
+
+---
+
+## 🔗 What Are Protocols?
+
+**Protocols** are rules that define how data is transmitted over networks. In DevOps, understanding these is essential for building, deploying, monitoring, and troubleshooting applications.
+
+---
+
+## 📋 Common Protocols & Port Numbers
+
+| Protocol | Port | Description | Relevance to DevOps |
+|----------|------|-------------|---------------------|
+| **HTTP**  | 80   | HyperText Transfer Protocol | Used for web apps, REST APIs, and internal tooling interfaces. |
+| **HTTPS** | 443  | HTTP Secure | Same as HTTP but encrypted. Used for secure access to APIs, dashboards, and websites. |
+| **FTP**   | 21   | File Transfer Protocol | Transfers files between client and server. Legacy use in CI/CD file transfer. |
+| **SFTP**  | 22   | Secure FTP (via SSH) | Secure alternative to FTP. Used in CI/CD pipelines to upload/download artifacts. |
+| **SSH**   | 22   | Secure Shell | Securely access remote servers for configuration, deployment, and automation. |
+| **DNS**   | 53   | Domain Name System | Resolves domain names into IP addresses. Critical for service discovery & deployments. |
+| **SMTP**  | 25   | Simple Mail Transfer Protocol | Sends automated alert emails from monitoring tools or CI systems. |
+| **SNMP**  | 161  | Simple Network Management Protocol | Monitors network and system health — used in observability stacks. |
+| **ICMP**  | N/A  | Internet Control Message Protocol | Not port-based. Used for "ping" and network reachability diagnostics. |
+
+---
+
+## 🛠️ Why This Matters in DevOps
+
+Understanding these protocols helps DevOps engineers:
+
+- Automate deployments over secure channels (SSH/SFTP)
+- Troubleshoot network or DNS issues quickly
+- Monitor system uptime and health
+- Set up CI/CD workflows that depend on file or API communication
+- Configure infrastructure with tools like Ansible, Terraform, Jenkins, etc.
+
+---
+
+## 📚 Further Reading
+
+- [Networking Basics for DevOps](https://www.redhat.com/en/topics/devops)
+- [IANA Service Name and Transport Protocol Port Number Registry](https://www.iana.org/assignments/service-names-port-numbers/service-names-port-numbers.xhtml)
+
+---
+
+
+
