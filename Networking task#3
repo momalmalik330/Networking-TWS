@@ -1,0 +1,67 @@
+# 🔐 How to Create and Configure Security Groups in AWS
+
+**Task (Day 3 - #90DaysOfDevOps)**: Understand and configure **Security Groups** — the virtual firewall controlling inbound and outbound traffic to AWS resources.
+
+---
+
+## 🧠 What is a Security Group?
+
+A **Security Group** acts as a **virtual firewall** for EC2 instances to control:
+- ✅ **Inbound traffic**: What is allowed *into* your instance
+- ✅ **Outbound traffic**: What is allowed *out* from your instance
+
+They are **stateful** — if you allow incoming traffic on a port, the response is automatically allowed.
+
+---
+
+## 🛠 Step-by-Step: Create & Configure Security Group
+
+### ✅ Step 1: Login to AWS Console
+Go to [AWS Console](https://console.aws.amazon.com/), and open the **EC2 Dashboard**.
+
+---
+
+### ✅ Step 2: Navigate to Security Groups
+- On the left panel, click **“Security Groups”** under **Network & Security**.
+
+---
+
+### ✅ Step 3: Click “Create Security Group”
+- Name: `my-devops-sg`
+- Description: `Security group for DevOps EC2 instance`
+- VPC: Select the default VPC (or your desired VPC)
+
+---
+
+### ✅ Step 4: Add Inbound Rules
+
+Click **"Add Rule"** to define what type of incoming traffic is allowed.
+
+| Type          | Protocol | Port Range | Source            | Use Case                  |
+|---------------|----------|------------|-------------------|---------------------------|
+| SSH           | TCP      | 22         | My IP             | Secure shell access       |
+| HTTP          | TCP      | 80         | Anywhere (0.0.0.0/0) | Serve web app (non-SSL) |
+| HTTPS         | TCP      | 443        | Anywhere (0.0.0.0/0) | Secure web access       |
+
+---
+
+### ✅ Step 5: Add Outbound Rules (optional)
+By default, all outbound traffic is allowed. You can restrict if needed.
+
+---
+
+### ✅ Step 6: Create Security Group
+Click **“Create security group”** to finish.
+
+---
+
+### ✅ Step 7: Attach Security Group to EC2
+- When launching or modifying an EC2 instance, select your created security group under **"Configure Security Group"**.
+
+---
+
+## 🧩 DevOps Relevance
+
+🔐 Security Groups are **essential for:
+- Allowing CI/CD agents to connect to servers
+- Ensuring apps only expose required
