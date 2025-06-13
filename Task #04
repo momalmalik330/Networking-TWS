@@ -1,0 +1,51 @@
+# 🧠 Networking Masterclass by Shubham Londhe — Week 1 Tasks -Day#04
+
+*Alhamdulillah!* I've completed *Week 1* of the *Free Networking Masterclass* by *Sir Shubham Londhe*. Here's a summary of what I learned and practiced.
+
+---
+
+## ✅ Task 1: Introduction to Computer Networking
+- Understood the basic concept of how computer networks work
+- Explored how data travels between devices (client-server model)
+- Watched video resources and took notes
+
+## ✅ Task 2: Understanding IP Addressing
+- Learned about IPv4 and IPv6
+- Practiced identifying private vs public IPs
+- Used ip a and hostname -I to view IPs on Linux
+
+## ✅ Task 3: Subnetting and DNS Concepts
+- Gained a conceptual understanding of subnet masks
+- Learned about DNS resolution and how domain names are translated
+- Used tools like nslookup and ping to test name resolution
+
+## ✅ Task 4: Basic Network Commands (Hands-On)
+- Practiced the following commands:
+  - ping: Test connectivity to websites and local network
+  - tracert / traceroute: Trace the route packets take to reach a destination
+  - nslookup: DNS resolution checks
+  - hostname: Check system name
+- Understood real-time troubleshooting steps
+
+---
+
+## 🛠 Tools Used
+- Linux Terminal (Ubuntu via WSL)
+- Windows Command Prompt (occasionally)
+- VS Code for note-taking
+- Git & GitHub for version control and documentation
+
+---
+
+## 📚 What's Next?
+I’m now moving on to *Linux Fundamentals, focusing on CLI commands, file systems, permissions, and core Linux concepts as part of **Week 2*.
+
+---
+
+## 🙏 Special Thanks
+*Thank you, Sir Shubham Londhe*, for providing such a valuable and free learning opportunity. Your dedication to empowering students and professionals is truly appreciated.
+
+---
+
+
+---
